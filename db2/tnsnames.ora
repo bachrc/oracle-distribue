@@ -1,0 +1,30 @@
+# tnsnames.ora Network Configuration File:
+
+XE =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = oracle2)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
+
+EXTPROC_CONNECTION_DATA =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = IPC)(KEY = EXTPROC_FOR_XE))
+    )
+    (CONNECT_DATA =
+      (SID = PLSExtProc)
+      (PRESENTATION = RO)
+    )
+  )
+
+ORACLE_DB1 = (DESCRIPTION =
+  (ADDRESS_LIST =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = oracle1)(PORT = 1521))
+  )
+  (CONNECT_DATA =
+    (SERVICE_NAME = XE)
+  )
+)

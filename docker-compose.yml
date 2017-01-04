@@ -1,0 +1,8 @@
+version: '2'
+services:
+    oracle1:
+        build: ./db1
+        ports:
+            - "1521:1521"
+    oracle2:
+        build: ./db2
