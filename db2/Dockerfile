@@ -9,4 +9,8 @@ COPY tnsnames.ora $TNS_ADMIN
 COPY startup.sh /usr/sbin
 RUN chmod 777 /usr/sbin/startup.sh
 
+ADD init.sql /tmp/
+ADD h_cre.sql /docker-entrypoint-initdb.d/ 
+ADD h_ins.sql /docker-entrypoint-initdb.d/
+
 RUN service oracle-xe start

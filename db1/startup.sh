@@ -8,10 +8,12 @@ if [ "$ORACLE_ALLOW_REMOTE" = true ]; then
   echo "alter system disable restricted session;" | sqlplus -s SYSTEM/oracle
 fi
 
+/u01/app/oracle/product/11.2.0/xe/bin/sqlplus "SYSTEM/oracle" @"/tmp/init.sql";
+
 for f in /docker-entrypoint-initdb.d/*; do
   case "$f" in
     *.sh)     echo "$0: running $f"; . "$f" ;;
-    *.sql)    echo "$0: running $f"; echo "exit" | /u01/app/oracle/product/11.2.0/xe/bin/sqlplus "SYSTEM/oracle" @"$f"; echo ;;
+    *.sql)    echo "$0: running $f"; echo "exit" | /u01/app/oracle/product/11.2.0/xe/bin/sqlplus "alain/elcaro" @"$f"; echo ;;
     *)        echo "$0: ignoring $f" ;;
   esac
   echo
