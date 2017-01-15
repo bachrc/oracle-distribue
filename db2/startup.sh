@@ -19,3 +19,7 @@ for f in /docker-entrypoint-initdb.d/*; do
   echo
 done
 
+/u01/app/oracle/product/11.2.0/xe/bin/sqlplus "SYSTEM/oracle" @"/tmp/exo3.sql";
+/u01/app/oracle/product/11.2.0/xe/bin/sqlplus "SYSTEM/oracle" @"/tmp/exo4.sql";
+/u01/app/oracle/product/11.2.0/xe/bin/sqlplus "SYSTEM/oracle" @"/tmp/exo6.sql";
+
