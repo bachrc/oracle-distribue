@@ -12,8 +12,7 @@ RUN chmod 777 /usr/sbin/startup.sh
 ADD init.sql /tmp/
 ADD exo3.sql /tmp/
 ADD exo4.sql /tmp/
-ADD exo6.sql /tmp/
+ADD exo6-1.sql /tmp/
+ADD exo6-2.sql /tmp/
 ADD h_cre.sql /docker-entrypoint-initdb.d/ 
 ADD h_ins.sql /docker-entrypoint-initdb.d/
-
-RUN service oracle-xe start
