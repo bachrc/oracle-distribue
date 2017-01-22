@@ -23,4 +23,4 @@ done
 /u01/app/oracle/product/11.2.0/xe/bin/sqlplus "norbert/oracle" @"/tmp/exo4.sql";
 /u01/app/oracle/product/11.2.0/xe/bin/sqlplus "norbert/oracle" @"/tmp/exo6-1.sql";
 /u01/app/oracle/product/11.2.0/xe/bin/sqlplus "norbert/oracle" @"/tmp/exo6-2.sql";
-
+/u01/app/oracle/product/11.2.0/xe/bin/sqlplus "norbert/oracle" @"/tmp/exo8-1.sql";

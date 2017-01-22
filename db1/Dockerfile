@@ -16,5 +16,6 @@ ADD exo6-1.sql /tmp/
 ADD exo6-2.sql /tmp/
 ADD exo6-3.sql /tmp/
 ADD exo8-0.sql /tmp/
+ADD exo8-1.sql /tmp/
 ADD h_central_cre.sql /docker-entrypoint-initdb.d/
 ADD h_central_ins.sql /docker-entrypoint-initdb.d/

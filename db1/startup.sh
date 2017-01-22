@@ -24,3 +24,4 @@ done
 /u01/app/oracle/product/11.2.0/xe/bin/sqlplus "alain/elcaro" @"/tmp/exo6-2.sql";
 /u01/app/oracle/product/11.2.0/xe/bin/sqlplus "alain/elcaro" @"/tmp/exo6-3.sql";
 /u01/app/oracle/product/11.2.0/xe/bin/sqlplus "alain/elcaro" @"/tmp/exo8-0.sql";
+/u01/app/oracle/product/11.2.0/xe/bin/sqlplus "alain/elcaro" @"/tmp/exo8-1.sql";
