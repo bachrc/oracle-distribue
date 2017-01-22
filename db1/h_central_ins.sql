@@ -28,8 +28,6 @@ Insert into hopital values(1, 'Hopital Flaubert', '55 rue Gustave Flaubert 76600
 Insert into hopital values(2, 'Hopital Pierre Janet', '47 rue Tourneville 76600 LE HAVRE') ;
 Insert into hopital values(3, 'Hopital Monod', '29 Pierre Mendes France 76290 MONTIVILLIERS') ;
 
-
-
 Insert into integre values(9999999990, 10, 'AMB', 120, to_date('30/09/98', 'DD/MM/YY')) ;
 Insert into integre values(9999999991, 11, 'AMB', 75, to_date('01/10/98', 'DD/MM/YY')) ;
 Insert into integre values(9999999992, 10, 'AMB', 100, to_date('17/12/98', 'DD/MM/YY')) ;
